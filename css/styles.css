@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: black;
+    color: yellow;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    border-bottom: 3px solid yellow;
+}
+
+header img#pacman {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 14px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Ghost Icons */
+.ghost-icon {
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Main Section */
+main {
+    padding: 50px;
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #ffeb3b;
+}
+
+#pellets {
+    margin-top: 20px;
+}
+
+.pellet {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 10px yellow;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.pellet:hover {
+    transform: scale(1.5);
+    background-color: white;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #000;
+    border-top: 3px solid yellow;
+    color: yellow;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main h1 {
+        font-size: 22px;
+    }
+}
+/*Pacman themed font from google fonts*/
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../fonts/PressStart2P-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons .icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.2);
+}
+
+
+/* Staff Section */
+.staff-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+}
+
+.staff-member {
+    text-align: center;
+    color: white;
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    width: 150px;
+}
+
+.staff-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+
+.staff-member h2 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: yellow;
+}
+
+.staff-member p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Services Table */
+.services-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    color: white;
+    text-align: left;
+}
+
+.services-table th, .services-table td {
+    border: 2px solid yellow;
+    padding: 10px;
+}
+
+.services-table th {
+    background-color: black;
+    color: yellow;
+    font-size: 14px;
+}
+
+.services-table caption {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: yellow;
+    text-shadow: 1px 1px 5px #ffeb3b;
+}
+
